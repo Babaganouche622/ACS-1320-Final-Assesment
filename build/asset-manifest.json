@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/acs-1320-final-assesment/static/css/main.e6c13ad2.css",
+    "main.js": "/acs-1320-final-assesment/static/js/main.0c758894.js",
+    "index.html": "/acs-1320-final-assesment/index.html",
+    "main.e6c13ad2.css.map": "/acs-1320-final-assesment/static/css/main.e6c13ad2.css.map",
+    "main.0c758894.js.map": "/acs-1320-final-assesment/static/js/main.0c758894.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.0c758894.js"
+  ]
+}
