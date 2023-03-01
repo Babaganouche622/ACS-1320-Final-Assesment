@@ -1,5 +1,4 @@
 import React from 'react';
-import "./Card.css";
 import Like from "../Like/Like";
 
 export default function Card({ band }) {
@@ -13,16 +12,16 @@ export default function Card({ band }) {
   }
   
   return (
-    <div className="card">
-      <h3>{band.band_name}</h3>
+    <div className="flex flex-col pl-8 border-red-700 rounded-md shadow-lg shadow-red-700 animate-pulse hover:border hover:animate-none">
+      <h3 className='text-4xl animate-none'>{band.band_name}</h3>
       <p>Origin: {band.origin}</p>
       <p>Fans: {toLocalString(band.fans)}</p>
       <p>Formed: {band.formed}</p>
       <p>Split: {band.split}</p>
         <p>Styles:</p>
-      <ul>
+      <ul className='pl-5'>
         {styles.map((style, key) =>(
-          <li key={key}>{style}</li>
+          <li key={key}className='list-disc'>{style}</li>
         ))}
       </ul>
       {band.split !== "-" ? null : <Like />}

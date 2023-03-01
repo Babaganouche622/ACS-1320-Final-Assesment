@@ -1,15 +1,14 @@
 import React from "react";
 import { useState } from "react";
-import "./Like.css";
 
 export default function Like() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="like">
-      <button onClick={() => {setCount(count+1)}}>👍</button>
-      <p>{count}</p>
-      <button onClick={() => {setCount(count <= 0 ? 0 : count-1)}}>👎</button>
+    <div className="flex flex-row space-x-4 items-center mt-4 mr-0">
+      <button className='text-4xl' onClick={() => {setCount(count+1)}}>👍</button>
+      <p className='text-4xl'>{count}</p>
+      <button className='text-4xl' onClick={() => {setCount(count <= 0 ? 0 : count-1)}}>👎</button>
     </div>
   );
 }
